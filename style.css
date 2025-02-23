@@ -41,7 +41,7 @@ h1{
     display: grid;
     border: 0px solid red;
     grid-template-columns:
-    repeat(auto-fit, minmax(300px, 1fr));
+    repeat(auto-fit, minmax(450px, 1fr));
     gap: 20px;
     justify-content: center;
 }
