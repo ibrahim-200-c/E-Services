@@ -9,7 +9,7 @@ html{
 }
 body{
     padding: min(30px, 99%);
-    background:  linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background: #F0F8FF;
     background-size: 400% 400%;
     animation: color 12s ease-in-out infinite;
 
@@ -33,7 +33,7 @@ h1{
     padding: 2em;
     border: 0px solid rgb(75,82,92);
     border-radius: 40px;
-    background-color: #222429;
+    background-color: #E05194;
     text-align: center;
     font-size: 25px;
 }
