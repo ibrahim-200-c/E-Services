@@ -4,9 +4,92 @@
         <meta charshet="UTF-8">
         <meta name="viewport" content="width=device">
         <title>Einbrainton.</title>
-        <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+            *{
+    margin:0;
+    padding:0;
+}
+html{
+    
+    color: beige;
+    text-align: center;
+}
+body{
+    padding: min(30px, 99%);
+    background: #F0F8FF;
+    background-size: 400% 400%;
+    animation: color 12s ease-in-out infinite;
+
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+h1{
+    margin: 30px 0;
+    color: rgb(0, 0, 0);
+}
+.card{
+    padding: 2em;
+    border: 0px solid rgb(75,82,92);
+    border-radius: 40px;
+    background-color: #E05194;
+    text-align: center;
+    font-size: 25px;
+}
+.grid-container{
+    display: grid;
+    border: 0px solid red;
+    grid-template-columns:
+    repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+            {
+            text-decoration: none;
+        }
+        .navbar{
+            background: crimson; font-family: calibri;  padding-right: 15px; padding-left: 15px;
+            
+            height: 120px;
+            
+        }
+        .navdiv{
+            display: flex; align-items: center; justify-content:space-between;
+        }
+        .logo a{
+            font-size: 40px; font-weight: 600; color: white; 
+        }
+        li{
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color: black; font-size: 15px; font-weight: bold; margin-right: 25px;
+        }
+        </style>
         </head>
         <body>
+           <nav class="navbar">
+<div class="navdiv">
+    <div class="logo"><a href="#">EINBRAINTON</a></div>
+<ul>
+    <li>
+        <button ><a href="#">Home</a></button>
+        <button ><a href="tel: 01792108310">Contact</a></button>
+    </li>
+</ul>
+</div>
+
+    </nav>
+        
+         <br> 
            
              
             
@@ -39,3 +122,4 @@
             </div>
            
         </body>
+
