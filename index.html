@@ -1,179 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Einbrainton</title>
-  <style>
-    /* Reset & Global */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      text-decoration: none;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EINBRAINTON</title>
 
-    html {
-      scroll-behavior: smooth;
-    }
+<style>
 
-    body {
-      font-family: Calibri, sans-serif;
-      color: beige;
-      text-align: center;
-      background: #071022;
-      background-size: 400% 400%;
-      animation: colorShift 12s ease-in-out infinite;
-      padding: 20px;
-    }
+*{
+margin:0;
+padding:0;
+text-decoration: none;
+box-sizing:border-box;
+font-family:"Montserrat", sans-serif;
+}
 
-    @keyframes colorShift {
-      0% { background-position: 0 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0 50%; }
-    }
+body{
+background:#071022;
 
-    /* Navbar */
-    .navbar {
-      background: #22c55e ;
-      color: white;
-      padding: 20px 40px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-       border-color:#22c55e;
-  box-shadow: 0 0 10px #22c55e ;
-    }
+}
 
-    .navdiv {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+.search-box{
+text-align:center;
+padding:20px;
+background:rgb(142, 223, 149);
+}
 
-    .logo a {
-      font-size: 40px;
-      font-weight: 700;
-      color: white;
-    }
+.search-box input{
+width:60%;
+max-width:500px;
+padding:12px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:5px;
+}
 
-    
+.search-box button{
+padding:12px 20px;
+font-size:16px;
+border:none;
+background:#111;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
 
-    /* Card Grid */
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
-      justify-content: center;
-    }
+.search-box button:hover{
+background:#444;
+}
+nav{
+background:#22c55e;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
 
-    .card {
-      padding: 2em;
-      border-radius: 25px;
-      background-color:#1c283b ;
-      color: white;
-      font-size: 22px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-      box-shadow: 1px 2px 6px #22c55e;
-    }
+nav a{
+color:white;
+padding:15px 20px;
+text-decoration:none;
+display:block;
+}
 
-    .card:hover {
-      transform: translateY(-5px) scale(1.03);
-      background: #22c55e;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    }
+nav a:hover{
+background:#444;
+}
 
-    h2 {
-      margin-bottom: 10px;
-    }
+.container{
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
 
-    /* Footer */
-    footer {
-      margin-top: 50px;
-      padding: 30px 20px;
-      background: none;
-      color:black;
-      border-radius: 15px;
-    }
+.card{
+background:#1c283b;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px #22c55e  ;
+text-align:center;
+transition:0.3s;
+font-weight:bold;
+}
 
-    .social-icons {
-      margin-top: 10px;
-    }
+.card:hover{
+transform:scale(1.05);
+ background-color:#22c55e 
+}
 
-    .social-icons a img {
-      width: 50px;
-      height: 50px;
-      margin: 0 10px;
-      transition: transform 0.3s;
-    }
+.card a{
+text-decoration:none;
+color:white;
+font-size:18px;
 
-    .social-icons a img:hover {
-      transform: scale(1.2);
-    }
 
-    /* Scroll animation (fade-in) */
-    .grid-container a {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease-out;
-    }
+}
 
-    .grid-container a.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
 
-    @media (max-width: 600px) {
-      .logo a { font-size: 30px; }
-      li a { font-size: 14px; }
-      .grid-container a img { width: 90%; height: auto; }
-    }
-  </style>
+</style>
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navdiv">
-      <div class="logo"><a href="#">EINBRAINTON</a></div>
-      
-    </div>
-  </nav>
+<header>
+EINBRAINTON 
+</header>
+<div class="search-box">
 
-  <!-- Grid Section -->
-  <div class="grid-container">
-    <a href="https://dhakaeducationboard.gov.bd/site/"><div class="card"><h2>DHAKA EDUCATION BOARD</h2></div></a>
-    <a href="https://ibrahim-200-c.github.io/Courier-Services/"><div class="card"><h2>EASY COURIER SERVICES</h2></div></a>
-    <a href="https://www.prothomalo.com/"><div class="card"><h2>ONLINE NEWS<br>(Prothom Alo)</h2></div></a>
-    <a href="https://www.mygov.bd/"><div class="card"><h2>MY GOVBD<br>All Govt. Services In One Platform</h2></div></a>
-    <a href="https://uddokta.eksheba.gov.bd/login"><div class="card"><h2>EK SHEBA<br>Entrepreneurs Services Platform</h2></div></a>
-    <a href="https://www.land.gov.bd/"><div class="card"><h2>EASY LAND SERVICE<br>AUTOMATION</h2></div></a>
-  </div>
+<form action="https://www.google.com/search" method="get">
 
-  <!-- Footer -->
-  <footer>
-   <font color="white" ><p>© 2025 EINBRAINTON | All Rights Reserved</p></font>
-    
-  </footer>
+<input type="text" name="q" placeholder="Search on Google...">
 
-  <!-- Scroll Animation JS -->
-  <script>
-    const cards = document.querySelectorAll('.grid-container a');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.1 });
+<button type="submit">Search</button>
 
-    cards.forEach(card => observer.observe(card));
-  </script>
+</form>
+
+</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="tel:017992108310">Contact</a>
+</nav>
+
+<div class="container">
+
+<a href="https://dhakaeducationboard.gov.bd/site/"> <div class="card"><font color="white">DHAKA EDUCATION BOARD</font></div></a>
+<a href="https://ibrahim-200-c.github.io/Courier-Services/"> <div class="card"><font color="white">EASY COURIER SERVICES</font></div></a>
+<a href="https://www.prothomalo.com/"> <div class="card"><font color="white">ONLINE NEWS</font></div></a>
+<a href="https://www.mygov.bd/"> <div class="card"><font color="white">MY GOVBD</font></div></a>
+<a href="https://uddokta.eksheba.gov.bd/login"> <div class="card"><font color="white">EK SHEBA</font></div></a>
+<a href="https://www.land.gov.bd/"> <div class="card"><font color="white"> LAND SERVICE <br>AUTOMATION </font></div></a>
+
+</div>
+
+<footer>
+© 2026 EINBRAINTON | Developed by <font color="yellow "> Md. Ibrahim Khalil </font> 
+</footer>
 
 </body>
 </html>
-
-
-
